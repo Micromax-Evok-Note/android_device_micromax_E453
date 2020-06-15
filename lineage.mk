@@ -15,13 +15,10 @@
 #
 
 LOCAL_PATH := device/micromax/E453
-# Enhanced NFC
-# $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# TODO: add this file.
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device_E453.mk)
 
@@ -33,12 +30,12 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_BRAND := Micromax
 PRODUCT_DEVICE := E453
 PRODUCT_MANUFACTURER := Micromax
-PRODUCT_MODEL := E453
+PRODUCT_MODEL := Micromax E453
 PRODUCT_NAME := lineage_E453
 PRODUCT_RELEASE_NAME := E453
 
 #TODO: whats this?
-PRODUCT_GMS_CLIENTID_BASE := android-micromax
+#PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 
 ## Use the latest approved GMS identifiers unless running a signed build
