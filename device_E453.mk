@@ -36,6 +36,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-#TODO: add these
+#TODO: add vendor files
 # Vendor product configurations
 #$(call inherit-product-if-exists, vendor/micromax/E453/E453-vendor.mk)
