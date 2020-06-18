@@ -1,0 +1,61 @@
+$ adb shell su -c "ls -l /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/"
+
+lrwxrwxrwx root     root              2020-06-18 10:05 boot -> /dev/block/mmcblk0p7
+lrwxrwxrwx root     root              2020-06-18 10:05 cache -> /dev/block/mmcblk0p21
+lrwxrwxrwx root     root              2020-06-18 10:05 expdb -> /dev/block/mmcblk0p10
+lrwxrwxrwx root     root              2020-06-18 10:05 flashinfo -> /dev/block/mmcblk0p23
+lrwxrwxrwx root     root              2020-06-18 10:05 frp -> /dev/block/mmcblk0p17
+lrwxrwxrwx root     root              2020-06-18 10:05 keystore -> /dev/block/mmcblk0p14
+lrwxrwxrwx root     root              2020-06-18 10:05 lk -> /dev/block/mmcblk0p5
+lrwxrwxrwx root     root              2020-06-18 10:05 logo -> /dev/block/mmcblk0p9
+lrwxrwxrwx root     root              2020-06-18 10:05 metadata -> /dev/block/mmcblk0p19
+lrwxrwxrwx root     root              2020-06-18 10:05 nvdata -> /dev/block/mmcblk0p18
+lrwxrwxrwx root     root              2020-06-18 10:05 nvram -> /dev/block/mmcblk0p2
+lrwxrwxrwx root     root              2020-06-18 10:05 oemkeystore -> /dev/block/mmcblk0p12
+lrwxrwxrwx root     root              2020-06-18 10:05 para -> /dev/block/mmcblk0p6
+lrwxrwxrwx root     root              2020-06-18 10:05 proinfo -> /dev/block/mmcblk0p1
+lrwxrwxrwx root     root              2020-06-18 10:05 protect1 -> /dev/block/mmcblk0p3
+lrwxrwxrwx root     root              2020-06-18 10:05 protect2 -> /dev/block/mmcblk0p4
+lrwxrwxrwx root     root              2020-06-18 10:05 recovery -> /dev/block/mmcblk0p8
+lrwxrwxrwx root     root              2020-06-18 10:05 seccfg -> /dev/block/mmcblk0p11
+lrwxrwxrwx root     root              2020-06-18 10:05 secro -> /dev/block/mmcblk0p13
+lrwxrwxrwx root     root              2020-06-18 10:05 system -> /dev/block/mmcblk0p20
+lrwxrwxrwx root     root              2020-06-18 10:05 tee1 -> /dev/block/mmcblk0p15
+lrwxrwxrwx root     root              2020-06-18 10:05 tee2 -> /dev/block/mmcblk0p16
+lrwxrwxrwx root     root              2020-06-18 10:05 userdata -> /dev/block/mmcblk0p22
+
+
+$ adb shell cat /proc/partitions
+
+major 	minor	 #blocks name
+
+   7        0      10452 loop0
+ 254        0    1494152 zram0
+ 179        0   30535680 mmcblk0
+ 179        1       3072 mmcblk0p1
+ 179        2       5120 mmcblk0p2
+ 179        3      10240 mmcblk0p3
+ 179        4      10240 mmcblk0p4
+ 179        5        512 mmcblk0p5
+ 179        6        512 mmcblk0p6
+ 179        7      16384 mmcblk0p7
+ 179        8      16384 mmcblk0p8
+ 179        9       8192 mmcblk0p9
+ 179       10      10240 mmcblk0p10
+ 179       11        512 mmcblk0p11
+ 179       12       2048 mmcblk0p12
+ 179       13       6144 mmcblk0p13
+ 179       14       8192 mmcblk0p14
+ 179       15       5120 mmcblk0p15
+ 179       16       5120 mmcblk0p16
+ 179       17       1024 mmcblk0p17
+ 179       18      32768 mmcblk0p18
+ 179       19      37888 mmcblk0p19
+ 179       20    4661248 mmcblk0p20
+ 179       21     409600 mmcblk0p21
+ 179       22   25267712 mmcblk0p22
+ 179       23      16384 mmcblk0p23
+ 179       96       4096 mmcblk0rpmb
+ 179       64       4096 mmcblk0boot1
+ 179       32       4096 mmcblk0boot0
+ 253        0   25267712 dm-0
