@@ -1,0 +1,29 @@
+# Ramdisk
+PRODUCT_PACKAGES += \
+    enableswap.sh \
+    factory_init.project.rc \
+    factory_init.rc \
+    factory_init.usb.rc \
+	init.common_svc.rc \
+	init.mal.rc \
+    fstab.mt6735 \
+	init.aee.rc \
+    init.rc \
+	init.common_svc.rc \
+	init.environ.rc \
+	init.hqfactory.rc \
+	init.aee.rc \
+    init.modem.rc \
+    init.mt6735.rc \
+    init.mt6735.usb.rc \
+    init.project.rc \
+    init.recovery.mt6735.rc \
+    init.trace.rc \
+    init.volte.rc \
+    init.xlog.rc \
+    init.zygote32.rc \
+    init.zygote64_32.rc \
+	meta_init.modem.rc \
+	meta_init.project.rc \
+	meta_init.rc \
+    ueventd.mt6735.rc
