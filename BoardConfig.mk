@@ -34,7 +34,7 @@ BOARD_KERNEL_CMDLINE := console=tty0 console=ttyMT0,921600n1 root=/dev/ram vmall
 
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel#
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000
 
 
