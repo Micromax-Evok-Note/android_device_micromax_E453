@@ -15,9 +15,5 @@ MTK_APPENDED_DTB_SUPPORT := yes
 TARGET_IS_64_BIT := true
 MTK_K64_SUPPORT := yes
 
-
-# Kernel properties
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
-
 # Hack for building without kernel sources
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
